@@ -25,6 +25,16 @@ bot.onText(/\/echo (.+)/, (msg, match) => {
   bot.sendMessage(chatId, resp);
 });
 
+bot.onText(/\/start/, (msg) => {
+    
+bot.sendMessage(msg.chat.id, "Welcome", {
+"reply_markup": {
+    "keyboard": [["Sample text", "Second sample"],   ["Keyboard"], ["I'm robot"]]
+    }
+});
+    
+});
+
 // Listen for any kind of message. There are different kinds of
 // messages.
 bot.on('message', (msg) => {
