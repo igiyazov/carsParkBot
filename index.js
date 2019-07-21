@@ -27,7 +27,7 @@ bot.onText(/\/echo (.+)/, (msg, match) => {
 
 bot.onText(/\/start/, (msg) => {
     
-bot.sendMessage(msg.chat.id, "Welcome", {
+bot.sendMessage(msg.chat.id, "Welcomen", {
 "reply_markup": {
     "keyboard": [["Sample text", "Second sample"],   ["Keyboard"], ["I'm robot"]]
     }
